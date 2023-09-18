@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', 'Courier New', Courier, monospace;
+    user-select: none;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #333;
+}
+.inputbox{
+    position: relative;
+    width: 450px;
+}
+.inputbox h2{
+    font-size: 28px;
+    color: #f8f8f8;
+    
+}
+.inputbox input{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    border: none;
+    margin: 15px 0 20px;
+    background: transparent;
+    outline: none;
+    padding: 0 20px;
+    font-size: 24px;
+    letter-spacing: 4px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    color: #f8f8f8;
+    box-shadow: -4px -4px 10px rgba(255, 255, 255, 1),
+                inset 4px 4px 10px rgba(0, 0, 0, 0.05),
+                inset -4px -4px 10px rgba(255, 255, 255, 1),
+                4px 4px 10px rgba(0, 0, 0, 0.05);
+}
+.inputbox input::placeholder{
+    letter-spacing: 0px;
+}
+.inputbox #btn{
+    position: relative;
+    cursor: pointer;
+    color: #fff;
+    background: #F7941D;
+    font-size: 24px;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: -4px -4px 10px rgba(255, 255, 255, 1),
+                inset 4px 4px 10px rgba(0, 0, 0, 0.05),
+                inset -4px -4px 10px rgba(255, 255, 255, 1),
+                4px 4px 10px rgba(0, 0, 0, 0.05);
+}
+.inputbox #btn:active{
+    background: rgba(0, 0, 0, 0.05);
+}
+.copy{
+    position: absolute;
+    top: 90px;
+    right: 15px;
+    cursor: pointer;
+    opacity: 0.2;
+}
+.copy:hover{
+    opacity: 2;
+}
+.alertbox{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #F7941D;
+    color: #fff;
+    text-align: center;
+    font-size: 4em;
+    display: none;
+}
+.alertbox.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
